@@ -319,6 +319,12 @@ ul li {
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
+  border-bottom: 1px solid rgb(180, 177, 177);
+  margin-top: 35px;
+}
+
+#projects div.project-container:last-child {
+  border-bottom: 0;
 }
 
 /* #projects div.project-image,
@@ -339,14 +345,75 @@ ul li {
   margin-bottom: var(--h2-margin-bot);
 }
 
+#projects div.project-container div.project-description h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+#projects div.project-container div.project-description {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+#projects div.project-container div.project-description div.demo-code-links {
+  margin-top: 10px;
+}
+
+#projects div.project-container div.project-description a {
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #672a83;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  #projects div.project-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #projects div.project-container div.project-image,
+  #projects div.project-container div.project-description {
+    width: 48%
+  }
+}
+
 /******* contacts section styling*******/
 
 #contact {
-  margin-bottom: var(--margin-bottom);
+  margin: 30px 0;
+  height: auto;
 }
 
-#contact h2 {
-  font-size: var(--h2-font-size);
-  border-bottom: 2px solid var(--border-color);
-  margin-bottom: var(--h2-margin-bot);
+#contact ul.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+#contact ul.contact-container li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+}
+#contact ul.contact-container li.contact-link a.link {
+  appearance: none;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  color: #672a83;
+  cursor: pointer;
+  font-size: 2.5rem;
+}
+
+footer {
+  text-align: center;
 }
