@@ -46,7 +46,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #eee;
 }
 
@@ -104,7 +104,8 @@ header nav ul li span {
 
 header nav div {
   display: block;
-  font-family: cursive;
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
 }
 
 ul li {
@@ -202,20 +203,27 @@ ul li {
   justify-content: center;
   margin: 4rem 0;
   font-size: 20px;
+  
 }
 
 #about img {
   display: none;
-  width: 840px;
-  height: 350px;
-  border: 2px solid var(--border-color);
+  width: auto;
+  height: 480px;
+  border: 3px solid #b2b2b2;
   border-radius: 20px;
 }
 
-#about div img {
-  display: block;
-  width: fit-content;
-  height: 350px;
+#about div div.img-centering img {
+  display: flex;
+  width: auto;
+  height: 480px;
+}
+
+#about div div.img-centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about div h2 {
@@ -226,7 +234,7 @@ ul li {
 }
 
 @media (min-width: 450px) {
-  #about div img {
+  #about div div.img-centering img {
     display: none;
   }
   #about img {
@@ -380,7 +388,7 @@ ul li {
   }
   #projects div.project-container div.project-image,
   #projects div.project-container div.project-description {
-    width: 48%
+    width: 48%;
   }
 }
 
