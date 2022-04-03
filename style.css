@@ -102,7 +102,7 @@ header nav ul li span {
   display: none;
 }
 
-header nav div {
+header nav div.name {
   display: block;
   font-family: 'Dancing Script', cursive;
   font-size: 50px;
